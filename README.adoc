@@ -296,6 +296,32 @@ image::https://user-images.githubusercontent.com/63274055/148652430-e8985110-7bf
 
 === Check the number of rentals for each customer for June
 
+```python
+query_2 = """
+SELECT
+    concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_june
+FROM
+    rentals_june a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY
+    1
+ORDER BY
+    1
+LIMIT
+    5;
+"""
+```
+
+```python
+data_2 = pd.read_sql_query(query_2, engine)
+data_2.head()
+```
+
+image::https://user-images.githubusercontent.com/63274055/148652705-b133b3a9-e76d-41a5-8540-0c60afbb0ca3.png[width=800]
+
+image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22e-4093-951e-d0e5a9b2e4c7.png[width=800]
+
 == Write a function that checks if customer borrowed more or less films in the month of June as compared to May
 
 
