@@ -131,7 +131,9 @@ image::path[width=800]
 
 image::path[width=800]
 
-== Create a Python connection with SQL database and retrieve the results of the last two queries (also mentioned below) as dataframes:
+== Create a Python connection with SQL database and retrieve the results of the last two queries 
+
+(also mentioned below) as dataframes:
 
 === Check the number of rentals for each customer for May
 
