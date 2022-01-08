@@ -218,9 +218,22 @@ image::https://user-images.githubusercontent.com/63274055/148648028-3b49ad95-78a
 
 ```sql
 
+SELECT
+    concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_june
+FROM
+    rentals_june a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY
+    1
+ORDER BY
+    1
+LIMIT
+    5;
+
 ```
 
-image::path[width=800]
+image::https://user-images.githubusercontent.com/63274055/148648836-054ddcd5-e2eb-4510-9020-de75cbe55766.png[width=800]
 
 == Create a Python connection with SQL database and retrieve the results of the last two queries 
 
