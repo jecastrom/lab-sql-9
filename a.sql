@@ -35,3 +35,9 @@ FROM
     rentals_may
 LIMIT
     3;
+SELECT
+    *
+FROM
+    rentals_june
+LIMIT
+    3;

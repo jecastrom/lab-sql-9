@@ -160,20 +160,36 @@ image::https://user-images.githubusercontent.com/63274055/148645242-51757c8c-1dc
 `*_Answer:_*`
 
 ```sql
+CREATE TABLE rentals_june AS
+SELECT
+    *
+FROM
+    rental
+WHERE
+    monthname(rental_date) = 'June';
 
 ```
 
-image::path[width=800]
+_to verify the table and data:_
+
+```sql
+SELECT
+    *
+FROM
+    rentals_june
+LIMIT
+    3;
+```
+
+image::https://user-images.githubusercontent.com/63274055/148647187-f60e8282-a517-4b63-a1ed-e9ec9e8477de.png[width=800]
 
 == Insert values in the table rentals_june using the table rental, filtering values only for the month of June
 
 `*_Answer:_*`
 
-```sql
+_Already done in the previous question_
 
-```
 
-image::path[width=800]
 
 == Check the number of rentals for each customer for May
 
