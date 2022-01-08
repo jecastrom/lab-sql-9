@@ -239,7 +239,60 @@ image::https://user-images.githubusercontent.com/63274055/148648836-054ddcd5-e2e
 
 (also mentioned below) as dataframes:
 
+`*_Answer:_*`
+
+```python
+from sqlalchemy import create_engine
+import pandas as pd
+import getpass
+```
+
+```python
+password = getpass.getpass()
+DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
+```
+
+image::pahttps://user-images.githubusercontent.com/63274055/148652270-462b343c-ffd0-4c5d-b483-2f5e7d405fea.pngth[width=800]
+
+
+
 === Check the number of rentals for each customer for May
+
+`*_Answer:_*`
+
+```python
+query_1 = """
+SELECT
+    concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_may
+FROM
+    rentals_may a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY
+    1
+ORDER BY
+    1
+LIMIT
+    5;
+
+"""
+
+```
+
+```python
+engine = create_engine(DATABASE_LOCATION, echo=True)
+data_1 = pd.read_sql_query(query_1, engine)
+data_1.head()
+
+```
+
+image::https://user-images.githubusercontent.com/63274055/148652329-ece32e57-429a-43cf-a81c-c7409107ab42.png[width=800]
+
+image::https://user-images.githubusercontent.com/63274055/148652392-17cbf615-3593-4fa9-a511-0b9a325e7cf7.png[width=800]
+
+image::https://user-images.githubusercontent.com/63274055/148652430-e8985110-7bf8-4bb4-9e98-98e5ba2df7d9.png[width=800]
+
+
 
 === Check the number of rentals for each customer for June
 
