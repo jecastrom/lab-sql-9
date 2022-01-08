@@ -1,10 +1,11 @@
-= Lab xxxx
+= Lab SQL Queries 9
 :stylesheet: boot-darkly.css
 :linkcss: boot-darkly.css
 :image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
 :my-name: Jorge Castro DAPT NOV2021
-:description:
+:description: In this lab, you will be using the Sakila database of movie rentals. You have been using this database for a couple labs already, but if you need to get the data again, refer to the official installation link.
 :script-url: https://github.com/jecastrom/data_2.07_activities/blob/7abfb6a0375c2c4ad3021f3f9a388a495142e1a8/files_for_actitity/act%202.07%20solutions.sql
+:sakila-edr: https://user-images.githubusercontent.com/63274055/147394200-2fdeec2e-a41a-4094-b544-dede2b263d96.png
 :related-content: https://github.com/jecastrom/data_2.09_activities.git
 //:fn-xxx: Add the explanation foot note here bla bla
 :toc:
@@ -62,10 +63,15 @@ toc::[]
 
 {description}
 
+The database is structured as follows:
+image::{sakila-edr}[width=200]
+
 
 = Instructions:
-== Question or request.
 
+In this lab we will find the customers who were active in consecutive months of May and June. Follow the steps to complete the analysis.
+
+== Create a table rentals_may to store the data from rental table with information for the month of May
 
 `*_Answer:_*`
 
@@ -73,15 +79,81 @@ toc::[]
 
 ```
 
-image::[width=700]
+image::path[width=800]
+
+== Insert values in the table rentals_may using the table rental, filtering values only for the month of May
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Create a table rentals_june to store the data from rental table with information for the month of June
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Insert values in the table rentals_june using the table rental, filtering values only for the month of June
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Check the number of rentals for each customer for May
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Check the number of rentals for each customer for June
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
+== Create a Python connection with SQL database and retrieve the results of the last two queries (also mentioned below) as dataframes:
+
+=== Check the number of rentals for each customer for May
+
+=== Check the number of rentals for each customer for June
+
+== Write a function that checks if customer borrowed more or less films in the month of June as compared to May
+
+
+
+
+
+
+
+
+
+
 
 ====
 ''''
 ====
 
-=== sjhdshds dhsjdh
-==== jksskj
-===== Last section
+
 
 ====
 ''''
@@ -99,9 +171,9 @@ image::[width=700]
 ''''
 ====
 
-xref:Lab-xxxx[Top Section]
+xref:Lab-SQL-Queries-9[Top Section]
 
-xref:Last-section[Bottom section]
+xref:Write-a-function-that-checks[Bottom section]
 
 //bla bla blafootnote:[{fn-xxx}]
 
