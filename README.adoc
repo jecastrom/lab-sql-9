@@ -252,7 +252,7 @@ password = getpass.getpass()
 DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
 ```
 
-image::pahttps://user-images.githubusercontent.com/63274055/148652270-462b343c-ffd0-4c5d-b483-2f5e7d405fea.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148652610-4125e0e2-4ae3-4465-838f-c3c8785460e0.png[width=800]
 
 
 
