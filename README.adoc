@@ -178,7 +178,8 @@ image::path[width=800]
 
 xref:Lab-SQL-Queries-9[Top Section]
 
-xref:Write-a-function-that-checks[Bottom section]
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 
 //bla bla blafootnote:[{fn-xxx}]
 
