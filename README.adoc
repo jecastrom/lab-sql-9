@@ -142,7 +142,7 @@ WHERE
     monthname(rental_date) = 'May';
 ```
 
-To verify that the table was created along with the data:
+_To verify that the table was created along with the data:_
 
 ```sql
 SELECT
