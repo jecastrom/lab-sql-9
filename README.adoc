@@ -284,7 +284,7 @@ data_1.head()
 
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148652329-ece32e57-429a-43cf-a81c-c7409107ab42.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148654352-294f3733-c329-4036-b2c2-df55e4f16354.png[width=800]
 
 image::https://user-images.githubusercontent.com/63274055/148652392-17cbf615-3593-4fa9-a511-0b9a325e7cf7.png[width=800]
 
@@ -314,7 +314,7 @@ data_2 = pd.read_sql_query(query_2, engine)
 data_2.head()
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148652705-b133b3a9-e76d-41a5-8540-0c60afbb0ca3.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148654396-c843b02a-20fd-49ba-a42f-6efd75d740ce.png[width=800]
 
 image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22e-4093-951e-d0e5a9b2e4c7.png[width=800]
 
