@@ -59,11 +59,14 @@ image::{image-url-ironhack}[width=70]
 ====
 ''''
 ====
-toc::[]
-
 {description}
 
+toc::[]
+
+
+
 The database is structured as follows:
+
 image::{sakila-edr}[width=200]
 
 
