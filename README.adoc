@@ -84,13 +84,51 @@ SELECT
     *
 FROM
     rental
+LIMIT
+    0;
+```
+
+to verify the table:
+
+```sql
+DESCRIBE rental;
+```
+
+
+image::https://user-images.githubusercontent.com/63274055/148646240-bfa84b35-c659-423e-8c34-d35ad73be688.png[width=800]
+
+== Insert values in the table rentals_may using the table rental, filtering values only for the month of May
+
+`*_Answer:_*`
+
+```sql
+INSERT INTO rentals_may
+SELECT
+    *
+FROM
+    rental
 WHERE
     monthname(rental_date) = 'May';
 ```
 
-image::path[width=800]
+_to verify that the data was inserted into the table:_
 
-== Insert values in the table rentals_may using the table rental, filtering values only for the month of May
+
+```sql
+SELECT
+    *
+FROM
+    rentals_may
+LIMIT
+    3;
+```
+
+image::https://user-images.githubusercontent.com/63274055/148646630-74596c5a-ed60-458c-979a-14b92a58ac9e.png[width=800]
+
+
+
+
+_the last two questions can be done in only one query as follow:_
 
 `*_Answer:_*`
 
@@ -103,6 +141,8 @@ FROM
 WHERE
     monthname(rental_date) = 'May';
 ```
+
+To verify that the table was created along with the data:
 
 ```sql
 SELECT

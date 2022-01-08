@@ -11,3 +11,27 @@ FROM
     rentals_may
 LIMIT
     5;
+-- *********************
+CREATE TABLE rentals_may AS
+SELECT
+    *
+FROM
+    rental
+LIMIT
+    0;
+-- *****************
+CREATE TABLE rentals_may AS
+SELECT
+    *
+FROM
+    rental
+LIMIT
+    0;
+DESCRIBE rental;
+;
+SELECT
+    *
+FROM
+    rentals_may
+LIMIT
+    3;
