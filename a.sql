@@ -1,43 +1,12 @@
-CREATE TABLE rentals_may AS
 SELECT
-    *
+    concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_may
 FROM
-    rental
-WHERE
-    monthname(rental_date) = 'May';
-SELECT
-    *
-FROM
-    rentals_may
+    rentals_may a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY
+    1
+ORDER BY
+    1
 LIMIT
     5;
--- *********************
-CREATE TABLE rentals_may AS
-SELECT
-    *
-FROM
-    rental
-LIMIT
-    0;
--- *****************
-CREATE TABLE rentals_may AS
-SELECT
-    *
-FROM
-    rental
-LIMIT
-    0;
-DESCRIBE rental;
-;
-SELECT
-    *
-FROM
-    rentals_may
-LIMIT
-    3;
-SELECT
-    *
-FROM
-    rentals_june
-LIMIT
-    3;

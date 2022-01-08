@@ -196,10 +196,21 @@ _Already done in the previous question_
 `*_Answer:_*`
 
 ```sql
-
+SELECT
+    concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_may
+FROM
+    rentals_may a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY
+    1
+ORDER BY
+    1
+LIMIT
+    5;
 ```
 
-image::path[width=800]
+image::https://user-images.githubusercontent.com/63274055/148648028-3b49ad95-78ae-4783-9705-aacb8e5d1c60.png[width=800]
 
 == Check the number of rentals for each customer for June
 
