@@ -271,9 +271,7 @@ FROM
 GROUP BY
     1
 ORDER BY
-    1
-LIMIT
-    5;
+    1;
 
 """
 
@@ -307,9 +305,7 @@ FROM
 GROUP BY
     1
 ORDER BY
-    1
-LIMIT
-    5;
+    1;
 """
 ```
 
