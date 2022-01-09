@@ -272,6 +272,7 @@ import getpass
 ```python
 password = getpass.getpass()
 DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
+engine = create_engine(DATABASE_LOCATION, echo=True)
 ```
 
 image::https://user-images.githubusercontent.com/63274055/148652610-4125e0e2-4ae3-4465-838f-c3c8785460e0.png[width=800]
@@ -304,7 +305,6 @@ ORDER BY
 ```
 
 ```python
-engine = create_engine(DATABASE_LOCATION, echo=True)
 data_1 = pd.read_sql_query(query_1, engine)
 data_1.head()
 
