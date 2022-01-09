@@ -356,6 +356,67 @@ xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the
 
 `*_Answer:_*`
 
+`*_Declaring the two SQL queries into separate variables:_*`
+```python
+query_1 = """
+SELECT concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_may
+FROM rentals_may a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY 1
+ORDER BY 1;
+"""
+```
+```python
+
+query_2 = """
+SELECT concat((b.last_name), ' ', (b.first_name)) AS customer_name,
+    count(*) AS number_of_films_rented_june
+FROM rentals_june a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+GROUP BY 1
+ORDER BY 1;
+"""
+```
+`*_Function:_*`
+
+```python
+def rents(customer_name):
+    from sqlalchemy import create_engine
+    import pandas as pd
+    import getpass
+    import numpy as np
+
+    # Connecting to the database
+    password = getpass.getpass()
+    DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
+    engine = create_engine(DATABASE_LOCATION)
+
+    # Fetching rentals for May with the SQL query 
+    data_05 = pd.read_sql_query(query_1, engine)
+
+    # Fetching rentals for June with the SQL query 
+    data_06 = pd.read_sql_query(query_2, engine)
+
+    # Merging the two DataFrames and replacing NULL values with (0)
+    rentals_05_06 = pd.merge(data_05, data_06)
+    rentals_05_06.fillna(value=0, inplace=True)
+
+    # Setting the index by customer name
+    rentals_05_06.set_index('customer_name', inplace = True)
+
+    if customer_name in rentals_05_06.index:
+        if rentals_05_06.at[customer_name, 'number_of_films_rented_may'] > rentals_05_06.at[customer_name, 'number_of_films_rented_june']:
+            print('Customer', customer_name, 'decreace of rents in June')
+        elif rentals_05_06.at[customer_name, 'number_of_films_rented_may'] < rentals_05_06.at[customer_name, 'number_of_films_rented_june']:
+            print('Customer', customer_name, 'increace of rents in June')
+        else:
+            print('Customer', customer_name, 'had same rents as May')
+    else:
+        print('Customer', customer_name, ' had no rents in May and June')
+```
+
+
 {jpt-function}[See answer on jupyter notebook]
 
 
