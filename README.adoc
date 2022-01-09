@@ -7,6 +7,8 @@
 :script-url: https://github.com/jecastrom/data_2.07_activities/blob/7abfb6a0375c2c4ad3021f3f9a388a495142e1a8/files_for_actitity/act%202.07%20solutions.sql
 :sakila-edr: https://user-images.githubusercontent.com/63274055/147394200-2fdeec2e-a41a-4094-b544-dede2b263d96.png
 :related-content: https://github.com/jecastrom/data_2.09_activities.git
+:jpt-function: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9_Function.ipynb
+:jpt-lab9: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9.ipynb
 //:fn-xxx: Add the explanation foot note here bla bla
 :toc:
 :toc-title: Lab description: In this lab, you will....
@@ -97,6 +99,10 @@ DESCRIBE rental;
 
 image::https://user-images.githubusercontent.com/63274055/148646240-bfa84b35-c659-423e-8c34-d35ad73be688.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 == Insert values in the table rentals_may using the table rental, filtering values only for the month of May
 
 `*_Answer:_*`
@@ -155,6 +161,10 @@ LIMIT
 
 image::https://user-images.githubusercontent.com/63274055/148645242-51757c8c-1dc1-446e-af79-857815ac0274.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 == Create a table rentals_june to store the data from rental table with information for the month of June
 
 `*_Answer:_*`
@@ -182,6 +192,10 @@ LIMIT
 ```
 
 image::https://user-images.githubusercontent.com/63274055/148647187-f60e8282-a517-4b63-a1ed-e9ec9e8477de.png[width=800]
+
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
 == Insert values in the table rentals_june using the table rental, filtering values only for the month of June
 
@@ -212,6 +226,10 @@ LIMIT
 
 image::https://user-images.githubusercontent.com/63274055/148648028-3b49ad95-78ae-4783-9705-aacb8e5d1c60.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 == Check the number of rentals for each customer for June
 
 `*_Answer:_*`
@@ -235,6 +253,10 @@ LIMIT
 
 image::https://user-images.githubusercontent.com/63274055/148648836-054ddcd5-e2eb-4510-9020-de75cbe55766.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 == Create a Python connection with SQL database and retrieve the results of the last two queries 
 
 (also mentioned below) as dataframes:
@@ -253,6 +275,10 @@ DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
 ```
 
 image::https://user-images.githubusercontent.com/63274055/148652610-4125e0e2-4ae3-4465-838f-c3c8785460e0.png[width=800]
+
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
 
 
@@ -290,6 +316,10 @@ image::https://user-images.githubusercontent.com/63274055/148652392-17cbf615-359
 
 image::https://user-images.githubusercontent.com/63274055/148652430-e8985110-7bf8-4bb4-9e98-98e5ba2df7d9.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 
 
 === Check the number of rentals for each customer for June
@@ -318,16 +348,15 @@ image::https://user-images.githubusercontent.com/63274055/148654396-c843b02a-20f
 
 image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22e-4093-951e-d0e5a9b2e4c7.png[width=800]
 
+xref:Lab-SQL-Queries-9[Top Section]
+
+xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
+
 == Write a function that checks if customer borrowed more or less films in the month of June as compared to May
 
+`*_Answer:_*`
 
-
-
-
-
-
-
-
+{jpt-function}[See answer on jupyter notebook]
 
 
 ====
@@ -346,7 +375,9 @@ image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22
 ''''
 ====
 
-{script-url}[Solutions script only]
+{jpt-lab9}[Solutions on jupyter notebook Part 1]
+
+{jpt-function}[Solutions on jupyter notebook Part 2]
 
 ====
 ''''
