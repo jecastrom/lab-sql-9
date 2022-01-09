@@ -429,16 +429,16 @@ def rents(customer_name):
 ====
 ''''
 ====
+{jpt-lab9}[Solutions on jupyter notebook Part 1]
 
-{related-content}[Related content: Activity 2.09]
+{jpt-function}[Solutions on jupyter notebook Part 2]
+
 
 ====
 ''''
 ====
 
-{jpt-lab9}[Solutions on jupyter notebook Part 1]
-
-{jpt-function}[Solutions on jupyter notebook Part 2]
+{related-content}[Related content: Activity 2.09]
 
 ====
 ''''
