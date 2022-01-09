@@ -417,7 +417,7 @@ def rents(customer_name):
 ```
 
 
-{jpt-function}[See answer on jupyter notebook]
+{jpt-function}[See answer to this question on jupyter notebook]
 
 
 ====
@@ -429,9 +429,9 @@ def rents(customer_name):
 ====
 ''''
 ====
-{jpt-lab9}[Solutions on jupyter notebook Part 1]
+{jpt-lab9}[Lab 9 Solutions on jupyter notebook Part 1]
 
-{jpt-function}[Solutions on jupyter notebook Part 2]
+{jpt-function}[Lab 9 Solutions on jupyter notebook Part 2]
 
 
 ====
