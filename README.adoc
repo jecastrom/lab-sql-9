@@ -344,9 +344,9 @@ data_2 = pd.read_sql_query(query_2, engine)
 data_2.head()
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148654396-c843b02a-20fd-49ba-a42f-6efd75d740ce.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148654396-c843b02a-20fd-49ba-a42f-6efd75d740ce.png[width=600]
 
-image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22e-4093-951e-d0e5a9b2e4c7.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148652806-1196bc07-c22e-4093-951e-d0e5a9b2e4c7.png[width=600]
 
 xref:Lab-SQL-Queries-9[Top Section]
 
