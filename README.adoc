@@ -310,11 +310,11 @@ data_1.head()
 
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148654352-294f3733-c329-4036-b2c2-df55e4f16354.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148654352-294f3733-c329-4036-b2c2-df55e4f16354.png[width=600]
 
-image::https://user-images.githubusercontent.com/63274055/148652392-17cbf615-3593-4fa9-a511-0b9a325e7cf7.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148652392-17cbf615-3593-4fa9-a511-0b9a325e7cf7.png[width=600]
 
-image::https://user-images.githubusercontent.com/63274055/148652430-e8985110-7bf8-4bb4-9e98-98e5ba2df7d9.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148652430-e8985110-7bf8-4bb4-9e98-98e5ba2df7d9.png[width=600]
 
 xref:Lab-SQL-Queries-9[Top Section]
 
