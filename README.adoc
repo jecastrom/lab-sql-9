@@ -275,7 +275,7 @@ DATABASE_LOCATION = 'mysql+pymysql://root:' + password + '@localhost/sakila'
 engine = create_engine(DATABASE_LOCATION, echo=True)
 ```
 
-image::https://user-images.githubusercontent.com/63274055/148679545-ff40bb35-a222-4c18-a646-cf88a7535dce.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/148679545-ff40bb35-a222-4c18-a646-cf88a7535dce.png[width=600]
 
 xref:Lab-SQL-Queries-9[Top Section]
 
