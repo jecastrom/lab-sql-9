@@ -414,8 +414,12 @@ def rents(customer_name):
             print('Customer', customer_name, 'had same rents as May')
     else:
         print('Customer', customer_name, ' had no rents in May and June')
+    
 ```
 
+`*_Testing the function by passing as argument the name of some customers):_*`
+
+image::https://user-images.githubusercontent.com/63274055/148707042-7ac1042e-6ffe-4cef-89dd-5a139020276b.png[width=600]
 
 {jpt-function}[See answer to this question on jupyter notebook]
 
