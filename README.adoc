@@ -76,7 +76,9 @@ image::{sakila-edr}[width=200]
 
 In this lab we will find the customers who were active in consecutive months of May and June. Follow the steps to complete the analysis.
 
-== Create a table rentals_may to store the data from rental table with information for the month of May
+== Create a table rentals_may
+
+to store the data from rental table with information for the month of May
 
 `*_Answer:_*`
 
@@ -103,7 +105,9 @@ xref:Lab-SQL-Queries-9[Top Section]
 
 xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
-== Insert values in the table rentals_may using the table rental, filtering values only for the month of May
+== Insert values in the table rentals_may
+
+using the table rental, filtering values only for the month of May
 
 `*_Answer:_*`
 
@@ -165,7 +169,9 @@ xref:Lab-SQL-Queries-9[Top Section]
 
 xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
-== Create a table rentals_june to store the data from rental table with information for the month of June
+== Create a table rentals_june
+
+to store the data from rental table with information for the month of June
 
 `*_Answer:_*`
 
@@ -197,7 +203,9 @@ xref:Lab-SQL-Queries-9[Top Section]
 
 xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
-== Insert values in the table rentals_june using the table rental, filtering values only for the month of June
+== Insert values in the table rentals_june 
+
+using the table rental, filtering values only for the month of June
 
 `*_Answer:_*`
 
@@ -257,7 +265,9 @@ xref:Lab-SQL-Queries-9[Top Section]
 
 xref:Write-a-function-that-checks-if-customer-borrowed-more-or-less-films-in-the-month-of-June-as-compared-to-May[Bottom section]
 
-== Create a Python connection with SQL database and retrieve the results of the last two queries 
+== Create a Python connection with your SQL database
+
+and retrieve the results of the last two queries 
 
 (also mentioned below) as dataframes:
 
