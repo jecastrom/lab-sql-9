@@ -521,17 +521,6 @@ data_1.head()
 
 
 
-image::path[width=800]
-
-
-`*_Answer:_*`
-
-```sql
-
-```
-
-image::path[width=800]
-
 ====
 ''''
 ====
