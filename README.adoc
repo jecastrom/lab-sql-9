@@ -472,7 +472,7 @@ pyodbc.drivers()
 image::https://user-images.githubusercontent.com/63274055/148929057-efe8076b-2466-478e-9c68-5092b2be8526.png[width=400]
 
 ```python
-# Creating the Server URL:
+# Creating the connection string (database location):
 server='{server_name}.database.windows.net,1433'.format(server_name=server_name)
 
 # Driver:
