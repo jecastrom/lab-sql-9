@@ -531,7 +531,6 @@ image::https://user-images.githubusercontent.com/63274055/148937894-797a01be-e01
 
 
 WARNING: Error message: ```python
----------------------------------------------------------------------------
 InterfaceError                            Traceback (most recent call last)
 ~\AppData\Local\Temp/ipykernel_19372/2813816242.py in <module>
 ----> 1 cnx = pyodbc.connect(DATABASE_LOCATION)
