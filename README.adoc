@@ -528,7 +528,7 @@ image::https://user-images.githubusercontent.com/63274055/148937894-797a01be-e01
 
 === Most common issues trying to connect to a cloud database (Azure SQL)
 
-* Server Driver:
+* _``Server Driver:``_
 
 
 WARNING: `Error message:`
@@ -546,7 +546,7 @@ At the Azure portal, Azure SQL databases provide a ready to use connection strin
 
 image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=800]
 
-* Azure SQL server firewall settings:
+* ``_Azure SQL server firewall settings:_``
 
 WARNING: `Error message:`
 
