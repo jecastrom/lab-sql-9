@@ -448,7 +448,7 @@ import pandas as pd
 import numpy as np
 
 ```
-* Setting up the connection string (database location) and the query variables
+* Setting up the the query variables and connection string (database location) 
 
 ```python
 sql_query_1 = """
@@ -469,7 +469,7 @@ ORDER BY 1;
 ```python
 pyodbc.drivers()
 ```
-
+image::https://user-images.githubusercontent.com/63274055/148929057-efe8076b-2466-478e-9c68-5092b2be8526.png[width=400]
 
 ```python
 
