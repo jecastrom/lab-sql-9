@@ -525,6 +525,16 @@ data_1.head()
 
 image::https://user-images.githubusercontent.com/63274055/148937894-797a01be-e011-4934-904f-fd17b243928f.png[width=400]
 
+=== Most common issues trying to connect to a cloud database (Azure SQL)
+
+* Server Driver:
+
+At the Azure portal, Azure SQL databases provides a ready to use connection string:
+
+image::https://user-images.githubusercontent.com/63274055/148946270-bdfa298c-bd53-4257-b52b-b76d793f2742.png[width=400]
+
+
+
 
 
 
