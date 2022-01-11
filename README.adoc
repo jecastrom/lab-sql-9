@@ -453,7 +453,7 @@ import pandas as pd
 import numpy as np
 
 ```
-* Setting up the the query variables and connection string (database location) 
+* Setting up the query variables and connection string (database location) 
 
 ```python
 sql_query_1 = """
