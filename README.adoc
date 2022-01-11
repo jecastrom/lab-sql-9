@@ -482,13 +482,12 @@ database_name='sakila'
 
 # Creating the Server URL:
 server='{server_name}.database.windows.net,1433'.format(server_name=server_name)
-```
 
-```python
 # User name and password
 username='a100jcd'
 token=getpass.getpass()
 ```
+
 
 ```python
 # Setting up the Azure SQL database connection
@@ -505,7 +504,7 @@ DATABASE_LOCATION = textwrap.dedent('''
     '''.format(driver=driver,server=server, 
     database=database_name, username=username, token=token))
 ```
-_Here I used `textwrap`. This python module provides formatting of text by adjusting the line breaks in the input paragraph. The `dedent`function in this case is particularly useful to keep the code tidy without adding the actual line breaks. 
+_Here I used `textwrap`. This python module provides formatting of text by adjusting the line breaks in the input paragraph. The `dedent`function in this case is particularly useful to keep the code tidy without adding the actual line breaks and also to be able to use `.format`. If I need to connect to another Azure SQL Server database, I only replace the variables ``
 
 Here I have a connection string which must be indicated in the same line. If I arbitrarily just format the string with triple quotes, I would be adding line breaks (`\n`) which would break the string. _
 
