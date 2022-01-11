@@ -561,7 +561,7 @@ ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][
 
 When a `Azure SQL Database` or Azure Synapse Analytics are first created, by default, the firewall blocks all access to the public endpoint for the server. It is necessary to add a firewall rule at the server-level to be able to access the resource. We can configure server-level IP firewall rules by using the Azure portal, PowerShell, or Transact-SQL statements.
 
-
+image::https://user-images.githubusercontent.com/63274055/148958618-f18a654e-0a2b-40ea-8b17-075f55ab781d.png[width=400]
 
 
 
