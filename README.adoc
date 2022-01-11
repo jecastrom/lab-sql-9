@@ -472,6 +472,8 @@ pyodbc.drivers()
 image::https://user-images.githubusercontent.com/63274055/148929057-efe8076b-2466-478e-9c68-5092b2be8526.png[width=400]
 
 ```python
+# Creating the Server URL:
+server='{server_name}.database.windows.net,1433'.format(server_name=server_name)
 
 # Driver:
 driver='{SQL Server Native Client 11.0}'
@@ -480,12 +482,10 @@ driver='{SQL Server Native Client 11.0}'
 server_name='tcp:serv-sakila-2'
 database_name='sakila'
 
-# Creating the Server URL:
-server='{server_name}.database.windows.net,1433'.format(server_name=server_name)
-
 # User name and password
 username='a100jcd'
 token=getpass.getpass()
+
 ```
 
 
