@@ -9,6 +9,7 @@
 :related-content: https://github.com/jecastrom/data_2.09_activities.git
 :jpt-function: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9_Function.ipynb
 :jpt-lab9: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9.ipynb
+:jpt-azure: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9_cnx_cloud_db.ipynb
 //:fn-xxx: Add the explanation foot note here bla bla
 :toc:
 :toc-title: Lab description: In this lab, you will....
@@ -534,7 +535,7 @@ data_1.head()
 
 {jpt-function}[Lab 9 Solutions on jupyter notebook Part 2]
 
-
+{jpt-azure}[Lab 9 Part 3: Connecting to a cloud SQL database jupyter notebook]
 ====
 ''''
 ====
