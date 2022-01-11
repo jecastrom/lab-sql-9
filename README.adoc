@@ -535,10 +535,13 @@ WARNING: `Error message:`
 ```python
 InterfaceError                            Traceback (most recent call last)
 ~\AppData\Local\Temp/ipykernel_19372/2813816242.py in <module>
-----> 1 cnx = pyodbc.connect(DATABASE_LOCATION)
+ 1 cnx = pyodbc.connect(DATABASE_LOCATION)
 
 InterfaceError: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name 
 not found and no default driver specified (0) (SQLDriverConnect)')
+```
+
+
 
 
 At the Azure portal, Azure SQL databases provides a ready to use connection string:
