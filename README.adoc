@@ -11,6 +11,7 @@
 :jpt-lab9: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9.ipynb
 :jpt-azure: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9_cnx_cloud_db.ipynb
 //:fn-xxx: Add the explanation foot note here bla bla
+:fn-odbc: ODBC stands for Open Database Connectivity. This is an API for accessing a database
 :toc:
 :toc-title: Lab description: In this lab, you will....
 :toc-placement!:
@@ -537,14 +538,14 @@ InterfaceError                            Traceback (most recent call last)
 ~\AppData\Local\Temp/ipykernel_19372/2813816242.py in <module>
  1 cnx = pyodbc.connect(DATABASE_LOCATION)
 
-InterfaceError: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name 
-not found and no default driver specified (0) (SQLDriverConnect)')
+InterfaceError: ('IM002', [IM002] [Microsoft][ODBC Driver Manager] Data source name 
+not found and no default driver specified (0) (SQLDriverConnect))
 ```
 
 
 
 
-At the Azure portal, Azure SQL databases provides a ready to use connection string:
+At the Azure portal, Azure SQL databases provides a ready to use connection string for ODBC.footnote:[{fn-odbc}]
 
 image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=400]
 
