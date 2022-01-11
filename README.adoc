@@ -559,7 +559,9 @@ ProgrammingError                          Traceback (most recent call last)
 ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open server 'serv-sakila-2' requested by the login. Client with IP address '2.206.133.211' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect. (40615) (SQLDriverConnect); [42000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open server 'serv-sakila-2' requested by the login. Client with IP address '2.206.133.211' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect. (40615); [42000] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)")
 ```
 
-It is necessary to add a firewall rule at the server-level to be able to access the resource. When a Azure SQL Database or Azure Synapse Analytics are first created, by default, the firewall blocks all access to the public endpoint for the server
+When a `Azure SQL Database` or Azure Synapse Analytics are first created, by default, the firewall blocks all access to the public endpoint for the server. It is necessary to add a firewall rule at the server-level to be able to access the resource. We can configure server-level IP firewall rules by using the Azure portal, PowerShell, or Transact-SQL statements.
+
+
 
 
 
