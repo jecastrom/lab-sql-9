@@ -547,7 +547,7 @@ not found and no default driver specified (0) (SQLDriverConnect))
 
 At the Azure portal, Azure SQL databases provides a ready to use connection string for ODBCfootnote:[{fn-odbc}] specifying the 
 
-image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=400]
+image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=600]
 
 
 
