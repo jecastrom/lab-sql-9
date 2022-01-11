@@ -523,6 +523,8 @@ data_1 = pd.read_sql_query(sql_query_1, cnx)
 data_1.head()
 ```
 
+image::https://user-images.githubusercontent.com/63274055/148937894-797a01be-e011-4934-904f-fd17b243928f.png[width=400]
+
 
 
 
