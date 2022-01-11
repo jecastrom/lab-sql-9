@@ -511,7 +511,7 @@ _Here I used `textwrap`. This python module provides formatting of text by adjus
 * `username`
 * `token` 
 
-A connection string must be indicated in the same line. If I arbitrarily just format the string with triple quotes, I would be adding line breaks (`\n`) which would break the string. _
+_A connection string must be indicated in the same line. If I arbitrarily just format the string with triple quotes, I would be adding line breaks (`\n`) which would break the string._
 
 ```python
 cnx = pyodbc.connect(DATABASE_LOCATION)
