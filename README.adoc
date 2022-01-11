@@ -12,7 +12,8 @@
 :jpt-azure: https://github.com/jecastrom/lab-sql-9/blob/master/Lab_9_cnx_cloud_db.ipynb
 //:fn-xxx: Add the explanation foot note here bla bla
 :fn-odbc: ODBC stands for Open Database Connectivity. This is an API for accessing a database
-:fn-fw: {https://docs.microsoft.com/en-us/azure/azure-sql/database/firewall-configure}
+:fn-fw: {sql-fw}
+:sql-fw: https://docs.microsoft.com/en-us/azure/azure-sql/database/firewall-configure
 :toc:
 :toc-title: Lab description: In this lab, you will....
 :toc-placement!:
