@@ -434,6 +434,104 @@ image::https://user-images.githubusercontent.com/63274055/148707042-7ac1042e-6ff
 {jpt-function}[See answer to this question on jupyter notebook]
 
 
+== Connecting to a Microsoft Azure SQL Database with pyodbc
+
+`*_Answer:_*`
+
+```python
+from sqlalchemy import create_engine
+import textwrap
+import pyodbc
+import getpass
+import pandas as pd
+import numpy as np
+
+```
+* Setting up the connection string (database location) and the query variables
+
+```python
+sql_query_1 = """
+SELECT last_name, first_name,
+    count(rental_id) AS number_of_films_rented_may
+FROM rental a
+    INNER JOIN customer b ON a.customer_id = b.customer_id
+WHERE MONTH(rental_date) = 5
+GROUP BY last_name, first_name
+ORDER BY 1;
+"""
+```
+
+
+* Driver: find the DRIVERS that are available using the pyodbc.drivers() method
+
+
+```python
+pyodbc.drivers()
+```
+
+
+```python
+
+# Driver:
+driver='{SQL Server Native Client 11.0}'
+
+# Server name and DataBase name:
+server_name='tcp:serv-sakila-2'
+database_name='sakila'
+
+# Creating the Server URL:
+server='{server_name}.database.windows.net,1433'.format(server_name=server_name)
+```
+
+```python
+# User name and password
+username='a100jcd'
+token=getpass.getpass()
+```
+
+```python
+# Setting up the Azure SQL database connection
+
+DATABASE_LOCATION = textwrap.dedent('''
+    Driver={driver};
+    Server={server};
+    Database={database};
+    Uid={username};
+    Pwd={token};
+    Encrypt=yes;
+    TrustServerCertificate=no;
+    Connection Timeout=30;
+    '''.format(driver=driver,server=server, 
+    database=database_name, username=username, token=token))
+```
+
+```python
+cnx = pyodbc.connect(DATABASE_LOCATION)
+
+```
+
+```python
+data_1 = pd.read_sql_query(sql_query_1, cnx)
+data_1.head()
+```
+
+
+
+
+
+
+
+image::path[width=800]
+
+
+`*_Answer:_*`
+
+```sql
+
+```
+
+image::path[width=800]
+
 ====
 ''''
 ====
