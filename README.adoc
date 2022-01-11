@@ -531,7 +531,7 @@ image::https://user-images.githubusercontent.com/63274055/148937894-797a01be-e01
 
 At the Azure portal, Azure SQL databases provides a ready to use connection string:
 
-image::https://user-images.githubusercontent.com/63274055/148946270-bdfa298c-bd53-4257-b52b-b76d793f2742.png[width=400]
+image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=400]
 
 
 
