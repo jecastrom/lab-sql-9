@@ -548,7 +548,9 @@ not found and no default driver specified (0) (SQLDriverConnect))
 
 At the Azure portal, Azure SQL databases provide a ready to use connection string for ODBCfootnote:[{fn-odbc}] specifying the `ODBC Driver 13 for SQL Server`.
 
-However SQLAlchemy has several dialects/DBAPI options availablefootnote:[fn-dbapi] such as PyODBC, mxODBCfootnote:[fn-mxODBC] and pymssql. So if we run into error messages of this sort, this is when the `.driver` method comes handy to check the available drivers so we can test the connection. 
+However SQLAlchemy has several dialects/DBAPI options availablefootnote:[fn-dbapi] such as PyODBC, mxODBCfootnote:[fn-mxODBC] and pymssql. So if we run into error messages of this sort, this is when the `.driver` method comes handy to check the available drivers so we can test the connection.
+
+For example in my case, I could not connect to the database using the `ODBC Driver 13 for SQL Server` as specified my Azure. I could connect successfully using the `ODBC Driver 17 for SQL Server`. Also we have to make sure that this driver is actually install in our pc.
 
 image::https://user-images.githubusercontent.com/63274055/148947267-9e6cceac-4281-4852-ba2c-beced8c0a4ff.png[width=800]
 
